@@ -1,0 +1,31 @@
+{
+  "name": "dxlibs-collection",
+  "version": "1.0.0",
+  "description": "Extensión de clase Array",
+  "author": "Dx Team <team@daax.com.ar>",
+  "scripts": {
+    "eslint": "eslint src/**.js",
+    "test": "jest ./test/**/*.test.js --collectCoverageFrom=./src/**/*.js --coverage --passWithNoTests",
+    "test-watch": "jest ./test/**/*.test.js --collectCoverageFrom=./src/**/*.js --coverage --passWithNoTests --watchPathIgnorePatterns=.*\\.sonar.* --watchAll ",
+    "sonar": "sonar-scanner -Dsonar.projectKey=dxlibs-collection -Dsonar.sourceEncoding=UTF-8 -Dsonar.host.url=http://sonarqube:9000 -Dsonar.sources=./src -Dsonar.language=js -Dsonar.exclusions=**.test.js -Dsonar.tests=./test -Dsonar.test.inclusions=./test/**/*.test.js"
+  },
+  "main": "src/index.js",
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "sinon": "^7.2.3",
+    "sonar-scanner": "^3.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dx-team/collection.git"
+  },
+  "keywords": [],
+  "license": "LICENSE",
+  "bugs": {
+    "url": "https://github.com/dx-team/collection/issues"
+  },
+  "homepage": "https://github.com/dx-team/collection#readme"
+}
